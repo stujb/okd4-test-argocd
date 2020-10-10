@@ -33,7 +33,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: "default"
   source:
-    path: "infra-app-of-apps"
+    path: "infra"
     repoURL: "https://github.com/stujb/okd4-test-argocd.git"
     targetRevision: "main"
   syncPolicy:
@@ -54,7 +54,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: "default"
   source:
-    path: "microservice-app-of-apps"
+    path: "microservices"
     repoURL: "https://github.com/stujb/okd4-test-argocd.git"
     targetRevision: "main"
   syncPolicy:
