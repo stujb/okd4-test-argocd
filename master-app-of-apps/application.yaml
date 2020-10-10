@@ -19,44 +19,44 @@ spec:
     automated:
       prune: false
       selfHeal: true
-#---
-#apiVersion: "argoproj.io/v1alpha1"
-#kind: "Application"
-#metadata:
-#  name: "infra-app-of-apps"
-#  namespace: "argocd"
-#  annotations:
-#    argocd.argoproj.io/sync-wave: "20"
-#spec:
-#  destination:
-#    namespace: "argocd"
-#    server: "https://kubernetes.default.svc"
-#  project: "default"
-#  source:
-#    path: "infra-app-of-apps"
-#    repoURL: "https://github.com/stujb/okd4-test-argocd.git"
-#    targetRevision: "main"
-#  syncPolicy:
-#    automated:
-#      prune: false
-#      selfHeal: true
-#---
-#apiVersion: "argoproj.io/v1alpha1"
-#kind: "Application"
-#metadata:
-#  name: "microservice-app-of-apps"
-#  namespace: "argocd"
-#    argocd.argoproj.io/sync-wave: "30"
-#spec:
-#  destination:
-#    namespace: "argocd"
-#    server: "https://kubernetes.default.svc"
-#  project: "default"
-#  source:
-#    path: "microservice-app-of-apps"
-#    repoURL: "https://github.com/stujb/okd4-test-argocd.git"
-#    targetRevision: "main"
-#  syncPolicy:
-#    automated:
-#      prune: false
-#      selfHeal: true
+---
+apiVersion: "argoproj.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: "infra-app-of-apps"
+  namespace: "argocd"
+  annotations:
+    argocd.argoproj.io/sync-wave: "20"
+spec:
+  destination:
+    namespace: "argocd"
+    server: "https://kubernetes.default.svc"
+  project: "default"
+  source:
+    path: "infra-app-of-apps"
+    repoURL: "https://github.com/stujb/okd4-test-argocd.git"
+    targetRevision: "main"
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+---
+apiVersion: "argoproj.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: "microservice-app-of-apps"
+  namespace: "argocd"
+    argocd.argoproj.io/sync-wave: "30"
+spec:
+  destination:
+    namespace: "argocd"
+    server: "https://kubernetes.default.svc"
+  project: "default"
+  source:
+    path: "microservice-app-of-apps"
+    repoURL: "https://github.com/stujb/okd4-test-argocd.git"
+    targetRevision: "main"
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
