@@ -14,7 +14,7 @@ spec:
   source:
     path: "namespaces"
     repoURL: "https://github.com/stujb/okd4-test-argocd.git"
-    targetRevision: "master"
+    targetRevision: "main"
   syncPolicy:
     automated:
       prune: false
@@ -35,7 +35,7 @@ spec:
   source:
     path: "infra-app-of-apps"
     repoURL: "https://github.com/stujb/okd4-test-argocd.git"
-    targetRevision: "master"
+    targetRevision: "main"
   syncPolicy:
     automated:
       prune: false
@@ -55,7 +55,7 @@ spec:
   source:
     path: "microservice-app-of-apps"
     repoURL: "https://github.com/stujb/okd4-test-argocd.git"
-    targetRevision: "master"
+    targetRevision: "main"
   syncPolicy:
     automated:
       prune: false
