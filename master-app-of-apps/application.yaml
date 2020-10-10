@@ -46,6 +46,7 @@ kind: "Application"
 metadata:
   name: "microservice-app-of-apps"
   namespace: "argocd"
+  annotations:
     argocd.argoproj.io/sync-wave: "30"
 spec:
   destination:
